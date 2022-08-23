@@ -28,7 +28,7 @@ export class AddTaskComponent implements OnInit {
         // Unsubscribe to ensure no memory leaks
         this.subscription.unsubscribe();
     }
-
+//when submitting task, check if there is text then emit.
   onSubmit() {
     if (!this.text) {
       alert('Please add a task!');
@@ -42,7 +42,6 @@ export class AddTaskComponent implements OnInit {
     };
 
     this.onAddTask.emit(newTask);
-
     this.text = '';
     this.day = '';
     this.reminder = false;

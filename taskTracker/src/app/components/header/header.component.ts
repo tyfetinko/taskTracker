@@ -25,7 +25,7 @@ export class HeaderComponent implements OnInit {
      // Unsubscribe to ensure no memory leaks
      this.subscription.unsubscribe();
    }
-
+//display (or not display )the add task form 
   toggleAddTask() {
     this.uiService.toggleAddTask();
   }
