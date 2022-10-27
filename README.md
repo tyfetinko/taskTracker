@@ -1,1 +1,1 @@
-# taskTracker
+# taskTracker with angular and typescript
